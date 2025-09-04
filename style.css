@@ -37,10 +37,10 @@ html, body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;0
+  width: 100%;
 }
 
-/* Background image for both pages */
+/* Background image (only where needed) */
 .bg-img {
   background-image: url("images/ocean.jpg");
   background-position: center;
@@ -52,8 +52,8 @@ html, body {
 
 /* Container */
 .container {
-  position: relative; /* საშუალებას აძლევს absolute ელემენტებს სწორად მდებარეობა */
-  padding-top: 0;  /* ნავბარი ზედა კიდიდან დაიწყება */
+  position: relative;
+  padding-top: 0;
 }
 
 /* Text on Image (Home page) */
@@ -69,7 +69,7 @@ html, body {
   border-radius: 8px;
   max-width: 80%;
   font-family: Arial, Helvetica, sans-serif;
-  z-index: 10; /* ფოტოებზე მაღლა */
+  z-index: 10;
 }
 
 /* Image link (Blog page) */
@@ -80,14 +80,23 @@ html, body {
   width: 100%;
   max-width: 600px;
   aspect-ratio: 2 / 1;
-  margin: 210px auto 0; /* 100px დაშორება ნავბარიდან */
+  margin: 40px auto;
   cursor: pointer;
-  background-image: url("images/Michelangelo_-_Creation_of_Adam_(cropped).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* First article background */
+.voices-link {
+  background-image: url("images/Michelangelo_-_Creation_of_Adam_(cropped).jpg");
+}
+
+/* Second article background */
+.heartbeat-link {
+  background-image: url("images/chairs.png");
 }
 
 /* Image title overlay */
@@ -115,4 +124,35 @@ html, body {
       font-size: 18px;
       padding: 15px;
   }
+}
+
+/* Gradient background for specific pages */
+.gradient-page {
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(lightpink, lightblue);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- ARTICLE PAGE STYLE --- */
+.article-text {
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: justify;
+  padding: 0 15px; /* ცოტა სივრცე მობილურზე */
+}
+
+.article-text h1, 
+.article-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-text p {
+  text-indent: 2em;
+  margin-bottom: 1em;
 }
