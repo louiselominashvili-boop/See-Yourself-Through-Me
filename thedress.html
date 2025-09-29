@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>See Yourself Through Me</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="blog1.html">Blog</a>
+    </div>
+
+    <div class="article-text">
+      <h1>What would you were?</h1>
+      <p>When you’re preparing for a meeting that could change everything—in your world, and perhaps in the outer world — The dress will be the hardest thing to choose. <strong> What would you wear?</strong> </p>
+      <p>The woman—Her, Irene Adler—decided not to wear anything. I believe it wasn’t because she didn’t want Sherlock to read her, but the opposite: she wanted him to read her completely. Not the designer, not the dress—just her. Her naked body, her naked soul.</p>
+      <p>And perhaps she was overwhelmed by the idea of choosing the dress. Because truly, you can’t find a dress worthy of that kind of meeting. The only choice is to go completely bare—in other words, to wear clothes where the full focus remains on you. Everything else should be background music. You should be the color and the material.</p>
+      <p>The million-dollar dress is <strong>YOU</strong>. And you are worth far more than a million dollars. If you don’t believe me, Ask your guardian angel.</p>
+    </div>
+<!-- Calendar -->
+<div id="calendar-widget"></div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 seeyourselfthroughme. All rights reserved.</p>
+</div>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar-widget');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                height: '40%'
+            });
+            calendar.render();
+        });
+    </script>  
+    
+</body>
+</html>

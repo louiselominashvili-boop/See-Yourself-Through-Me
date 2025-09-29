@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TIME</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="blog1.html">Blog</a>
+    </div>
+
+    <div class="article-text">
+    <h1> The Delight of Time</h1> 
+
+    <p>
+    <p>
+        As human beings, we often search for peaceful escapes from the very realities we’ve built ourselves. In those quiet moments, we sometimes realize that we are not giving enough weight to our most valuable asset—<strong>Time</strong>.</p>
+        <p>
+        In astrology, time is governed by wise old Saturn, often called the strict teacher. Yet Saturn does not punish for punishment’s sake—his only desire is to reward you for the lessons you’ve truly learned. But rewards cannot be given where readiness is absent. To receive his gifts, you must offer respect, patience, and consistency. Saturn’s lessons are not rushed; they unfold at your pace, and through this process, peace finds you. Time is not slipping away—it is you who moves through it. The real question is:<strong> where do you wish to be?
+            
+        </strong></p>
+        </p>
+        <p>
+        The stress we feel about time is born from fear—fear of missing the “right” moment, wasted opportunities, or chances that seem to have slipped by. But this fear has little to do with time itself. Time exists, yet not in the rigid sense we perceive it. Our souls live beyond time’s boundaries.</p>
+        <p>
+        You have the power to create the right moment rather than wait for falling stars beyond your control. You can bring those stars under your own will. Do not lower your energy or lose faith—trust your soul and speak clearly about what you desire. Time will respond. And when the universe showers you with meteors of fortune at just the right moment, you will be ready to catch every single one.
+        </p>
+    </p>
+</div>
+
+<!-- Calendar -->
+<div id="calendar-widget"></div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 seeyourselfthroughme. All rights reserved.</p>
+</div>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar-widget');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                height: '40%'
+            });
+            calendar.render();
+        });
+    </script>  
+
+</body>
+</html>
