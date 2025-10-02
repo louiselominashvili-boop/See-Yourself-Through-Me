@@ -95,6 +95,8 @@ html, body {
 
 .time-link { 
   background-image: url("images/time.png"); 
+  background-repeat: no-repeat;
+  background-position: center 2px;
 } 
 
 .autumn-link{
@@ -103,8 +105,13 @@ html, body {
 
 .thedress-link{
   background-image: url("images/thedress.jpg");
+  background-repeat: no-repeat;
+  background-position: center 30px;
 }
 
+.thesoul-link{
+  background-image: url("images/thesoul.jpg");
+}
 
 /* Image title overlay */
 .image-title { 
