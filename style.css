@@ -96,21 +96,29 @@ html, body {
 .time-link { 
   background-image: url("images/clock-and-time-concept.png"); 
   background-repeat: no-repeat;
-  background-position: center 2px;
+  background-position: center;
+  background-size: 100% 120%;
 } 
 
 .autumn-link{
   background-image: url("images/autumn/autumn-leaves-fall-season.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .thedress-link{
   background-image: url("images/the-dress-blue-gold-illusion.jpg");
   background-repeat: no-repeat;
-  background-position: center 30px;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .thesoul-link{
   background-image: url("images/the-soul-art-portrait.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 120%;
 }
 
 .stuck-link{
@@ -125,10 +133,59 @@ background-image: url("images/pink-lotus-flower.png");
   background-image: url("images/box-of-cakes-with-question-start-game.jpg");
   }
 
-.nightmares-link{
+/*.nightmares-link{
   background-image: url("images/dream-snake-eating-egg-deer-eating-grass-loughing-girl-is-sitting-on-lemon.png");
+  background-repeat: no-repeat;
+  background-position: center ;
+  }*/
+  .nightmares-link{
+    background-image: url("images/dream-snake-eating-egg-deer-eating-grass-loughing-girl-is-sitting-on-lemon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300% 320%;
   }
+.freedom-link{
+    background-image: url("images/freedom.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 120%;
+    }
+.angels-link {
+  background-image: url("images/angels.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120% 140%;
+}
 
+.bakeacake-link {
+  background-image:url("images/slice\ of\ cake.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140% 190%;
+}
+
+
+
+.AI-link {
+  background-image:url("images/AI.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140% 190%;
+}
+
+.winter-link {
+  background-image:url("images/winter.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120% 140%;
+}
+
+.emotions-link {
+  background-image:url("images/emotions.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120% 140%;
+}
 
 /* Image title overlay */
 .image-title { 
@@ -249,4 +306,38 @@ background-image: url("images/pink-lotus-flower.png");
 /* მარჯვენა სვეტი */
 .article-text::after {
   right: -320px;
+}
+
+/* — HEART ANIMATION — */
+:root {
+  --heart-size: 120px;
+  --beat-duration: 1s;
+  --heart-color: #ff4d6d;
+}
+
+.heart-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.heart {
+  width: var(--heart-size);
+  height: auto;
+  animation: beat var(--beat-duration) cubic-bezier(.2,.7,.2,1) infinite;
+  transform-origin: center;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.12));
+}
+
+@keyframes beat {
+  0%   { transform: scale(1); }
+  8%   { transform: scale(1.22); }
+  18%  { transform: scale(0.95); }
+  30%  { transform: scale(1.12); }
+  45%  { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}
+
+.heart path {
+  fill: var(--heart-color);
 }
